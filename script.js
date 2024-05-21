@@ -54,11 +54,26 @@ from.addEventListener('input',changeValue);
 
 function changeValue(){
     let text=from.value;
+    let num=parseFloat(text).toString();
     if(isNaN((parseFloat(text)))){
         to.value = "";
         result.style.display="none";
+        if(text!==""){
+            window.alert("Enter a valid Number");
+            from.value="";
+        }
         return;
     }
+    else if(text.length!==num.length && (text[text.length -1]!=="." || text.length-1!==num.length)){
+        // checks non-numerical characters in the input
+        to.value="";
+        result.style.color="white";
+        result.style.backgroundColor="red";
+        result.textContent="Enter a valid Number";
+        return;
+    }
+    result.style.color="black";
+    result.style.backgroundColor="springgreen";
     result.style.display= "block";
     if(getComputedStyle(length).color==='rgb(0, 0, 255)'){
         lengthCalc(text);

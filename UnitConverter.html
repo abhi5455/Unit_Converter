@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="style.css">
+</head>
+<body>
+    <h1 align="center" id="header">UNIT CONVERTER</h1>
+    <p>        <img src="darktheme_icon.png" id="themeicon" title="darktheme">
+    </p>
+    <div class="menu">
+        <button id="length">Length</button>
+        <button id="temp">Temperature</button>
+        <button id="area">Area</button>
+        <button id="volume">Volume</button>
+        <button id="weight">Weight</button>
+        <button id="time">Time</button>
+    </div>
+    <div class="box" id="box">
+        <label for="from" id="label1">From: </label>
+        <input type="text" id="from" placeholder="Enter Unit"/>
+        <label for="to" id="label2">To: </label>
+        <input type="text" id="to" readonly/>
+        <select id="choice1">
+            <option value="m">Meter</option>
+            <option value="cm">CentiMeter</option>
+        </select>
+        <select id="choice2">
+            <option value="m">Meter</option>
+            <option value="cm">CentiMeter</option>
+        </select>
+        <div class="imageContainer">
+            <img src="arrow.png" class="arrow" id="arrow">
+        </div>
+    <h2>
+        <label id="result">RESULT: </label>
+    </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

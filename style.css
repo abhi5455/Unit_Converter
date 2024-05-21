@@ -10,8 +10,6 @@ h1:hover{
     cursor: default;
 }
 .menu{
-    /*display: flex;
-    flex-wrap: wrap;*/
     margin: 75px;
     margin-top: 4.5%;
     height: 20px;

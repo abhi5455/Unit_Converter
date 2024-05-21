@@ -72,7 +72,6 @@ function changeValue(){
     else if(getComputedStyle(weight).color==='rgb(0, 0, 255)') {
         weightCalc(text);
     }
-    console.log(choice1.options.text);
     result.textContent="RESULT: "+from.value+" "+choice1.options[choice1.selectedIndex].text+" = "+to.value+" "+choice2.options[choice2.selectedIndex].text;
 }
 
@@ -135,9 +134,7 @@ function optionList(array) {
 let themeicon=document.getElementById('themeicon');
 themeicon.addEventListener('click',changeTheme);
 function changeTheme(){
-    console.log(themeicon.title);
     if(themeicon.title==='darktheme'){
-        console.log(themeicon.src);
         themeicon.src='lighttheme_icon.png';
         themeicon.title='lighttheme';
         document.body.style.backgroundImage='url("bgImg4.jpg")';

@@ -135,6 +135,7 @@ h2{
 #result{
     display: none;
     color: black;
+    font-size: 90%;
     background-color: springgreen;
     padding: 15px;
     border-radius: 7px;

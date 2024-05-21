@@ -1,0 +1,376 @@
+body{
+    background-image: url("bgImg.jpg");
+    transition-delay: 0ms;
+}
+h1{
+    color: blue;
+    font-weight: bolder;
+}
+h1:hover{
+    cursor: default;
+}
+.menu{
+    /*display: flex;
+    flex-wrap: wrap;*/
+    margin: 75px;
+    margin-top: 4.5%;
+    height: 20px;
+    width: auto;
+    padding: 20px;
+    justify-content: center;
+}
+.box{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: -60px;
+    padding: 20px;
+    width: auto;
+    background-color: floralwhite;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0.5,0,0,0.5);
+    opacity: .8;
+}
+button{
+    margin-right: 10px;
+    height: 45px;
+    width: 150px;
+    border-radius: 7px;
+    border-color: white;
+    border-width: 0;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    background-color: #0541d8;
+    outline: none;
+    transition: transform 0.15s;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition:transition 400ms;
+}
+#length{
+    background-color: floralwhite;
+    color: blue;
+    box-shadow: none;
+}
+label{
+    display: block;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#label1{
+    margin-left: 16.5%;
+}
+#label2{
+    margin-left: 59%;
+    margin-top: -95px;
+}
+input{
+    block-size: 40px;
+    margin-top: 20px;
+    width:auto;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 10px;
+    border-color: #080808;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-width: 2px;
+}
+#from{
+    margin-left: 16.5%;
+    width: 24%;
+}
+#from::placeholder{
+    color: lightgrey;
+    font-size: x-large;
+}
+#to{
+    margin-left: 59%;
+    width: 24%;
+}
+#to:hover{
+    cursor: none;
+}
+select{
+    block-size: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    color: red;
+    border-color: #080808;
+    border-width: 1px;
+}
+#choice1{
+    display: block;
+    margin-left: 16.5%;
+}
+#choice2{
+    display: block;
+    margin-left: 59%;
+    margin-top: -42px;
+}
+option {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: white;
+    mso-border-shadow: no;
+}
+select option:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+h2{
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#result{
+    display: none;
+    color: black;
+    background-color: springgreen;
+    padding: 15px;
+    border-radius: 7px;
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+}
+.arrow {
+    position: absolute;
+    margin-top: -110px;
+    width: 37px;
+    height: 30px;
+}
+.arrow:hover{
+    transform: scale(1.1);
+    transition: transform 200ms;
+    cursor: pointer;
+}
+p{
+    margin-top: -59px;
+    margin-left: 90%;
+}
+#themeicon{
+    width: 32px;
+    height: 30px;
+}
+#themeicon:hover{
+    transform: scale(0.9);
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+@media (min-width: 391px) and (max-width: 1200px){
+    /*almost*/
+    .menu{
+        margin-top: 40px;
+        margin-left: 2%;
+        width: 90%;
+        margin-bottom: 80px;
+    }
+    .box{
+        margin: 2%;
+        margin-top: -60px;
+    }
+    button{
+        width: 14%;
+        font-size: 100%;
+        margin-right: 6px;
+    }
+    #label1,#choice1{
+        margin-left: 10%;
+    }
+    #label2,#choice2{
+        margin-left: 61%;
+    }
+    #from{
+        margin-left: 10%;
+        width: 25%;
+    }
+    #to{
+        margin-left: 61%;
+        width: 25%;
+    }
+    #temp{
+        width: 110px;
+    }
+}
+@media(min-width: 391px) and (max-width: 650px){
+    /* set*/
+    h1{
+        padding-bottom: 10px ;
+    }
+    button{
+        width: 13vw;
+        margin-right: 4px;
+        font-size: 90%;
+    }
+    #volume{
+        display: none;
+    }
+    .menu{
+        margin: 0;
+        width: auto;
+        padding-right: 0;
+    }
+    .box{
+        margin: 10px;
+        height: auto;
+    }
+    #temp{
+        width: 104px;
+    }
+    #weight{
+        width: 16vw;
+    }
+    label{
+        font-size: 140%;
+    }
+    input{
+        width: 50%;
+        font-size: large;
+    }
+    #label1{
+        margin-left: 8%;
+        margin-top: 65px;
+    }
+    #choice1{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -157px;
+        font-size: medium;
+    }
+    #choice2{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 30px;
+        font-size: medium;
+    }
+    #label2{
+        margin-left: 10%;
+        margin-top: 160px;
+    }
+    #from{
+        position: absolute;
+        margin-left: 25%;
+        width: 50vw;
+        margin-top: -30px;
+    }
+    #to{
+        position: absolute;
+        margin-top: -30px;
+        width: 50vw;
+        margin-left: 25%;
+    }
+    .arrow{
+        position: absolute;
+        margin-top: -85px;
+        transform: rotate(90deg);
+    }
+    .arrow:hover{
+        transform: rotate(90deg);
+        transform: scale(1.1);
+    }
+    p{
+        position: absolute;
+        margin-top: -70px;
+    }
+    #result{
+        font-size: medium;
+    }
+}
+@media (max-width:391px){
+    h1{
+        padding-bottom: 10px ;
+        font-size: 150%;
+    }
+    button{
+        width: 12.4vw;
+        margin-right: 4px;
+        font-size: 60%;
+        padding: 0;
+        margin-left: -5px;
+    }
+    #volume{
+        display: none;
+    }
+    .menu{
+        margin: 0;
+        width: auto;
+        padding-right: 0;
+    }
+    .box{
+        margin: 10px;
+        height: auto;
+        width: 77.5vw;
+    }
+    #temp{
+        width: 80px;
+    }
+    label{
+        font-size: 120%;
+    }
+    input{
+        width: 50%;
+        font-size: large;
+    }
+    #label1{
+        margin-left: 6%;
+        margin-top: 65px;
+    }
+    #choice1{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -157px;
+        font-size: medium;
+    }
+    #choice2{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 30px;
+        font-size: medium;
+    }
+    #label2{
+        margin-left: 10%;
+        margin-top: 160px;
+    }
+    #from{
+        position: absolute;
+        margin-left: 25%;
+        width: 45vw;
+        margin-top: -30px;
+    }
+    #from::placeholder{
+        font-size: large;
+    }
+    #to{
+        position: absolute;
+        margin-top: -30px;
+        width: 45vw;
+        margin-left: 25%;
+    }
+    .arrow{
+        position: absolute;
+        margin-top: -85px;
+        transform: rotate(90deg);
+    }
+    p{
+        position: absolute;
+        margin-top: -55px;
+    }
+    #themeicon{
+        width: 26px;
+        height: 25px;
+    }
+    #result{
+        font-size: 45%;
+    }
+}

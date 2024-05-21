@@ -93,6 +93,9 @@ input{
 #to:hover{
     cursor: none;
 }
+#from:hover{
+    cursor: text;
+}
 select{
     block-size: 40px;
     margin-top: 20px;

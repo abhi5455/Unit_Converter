@@ -9,6 +9,7 @@ window.addEventListener('resize',function(){
     }
 })
 
+
 //Initializing
 let length = document.getElementById('length');
 let temp = document.getElementById('temp');

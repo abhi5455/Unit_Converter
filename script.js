@@ -151,20 +151,20 @@ let themeicon=document.getElementById('themeicon');
 themeicon.addEventListener('click',changeTheme);
 function changeTheme(){
     if(themeicon.title==='darktheme'){
+        document.body.style.backgroundImage='url("Images%20and%20Icons/dark_bgImg.jpg")';
         themeicon.src='Images%20and%20Icons/lighttheme_icon.png';
         document.getElementById('arrow').src = 'Images%20and%20Icons/white_arrow.png';
         themeicon.title='lighttheme';
-        document.body.style.backgroundImage='url("Images%20and%20Icons/dark_bgImg.jpg")';
         document.getElementById('label1').style.color='white';
         document.getElementById('label2').style.color='white';
         from.style.opacity='10';
         document.getElementById('box').style.backgroundColor='rgba(25, 25, 112, 0.75)';
     }
     else {
+        document.body.style.backgroundImage= 'url("Images%20and%20Icons/light_bgImg.jpg")';
         themeicon.src = 'Images%20and%20Icons/darktheme_icon.png';
         document.getElementById('arrow').src='Images%20and%20Icons/black_arrow.png';
         themeicon.title = 'darktheme';
-        document.body.style.backgroundImage= 'url("Images%20and%20Icons/light_bgImg.jpg")';
         document.getElementById('label1').style.color='black';
         document.getElementById('label2').style.color='black';
         document.getElementById('box').style.backgroundColor='floralwhite';

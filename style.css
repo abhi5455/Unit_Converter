@@ -296,6 +296,15 @@ p{
     #result{
         font-size: medium;
     }
+    p{
+        margin-top: -54px;
+        margin-left: 91%;
+    }
+    #themeicon{
+
+        width: 27px;
+        height: 25px;
+    }
 
 }
 @media (max-width:391px){

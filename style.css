@@ -10,29 +10,42 @@ h1:hover{
     cursor: default;
 }
 .menu{
-    margin: 75px;
-    margin-top: 4.5%;
+    display: flex;
+    position: absolute;
+    top: 21%;
+    left: 7%;
     height: 20px;
     width: auto;
-    padding: 20px;
-    justify-content: center;
 }
 .box{
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 6%;
     padding: 20px;
-    width: auto;
+    width: 85%;
     background-color: floralwhite;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0.5,0,0,0.5);
     opacity: .8;
 }
+.subBox{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.subbox1,.subbox2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+}
 button{
-    margin-right: 10px;
+    margin-right: 15px;
     height: 45px;
-    width: 150px;
+    width: 11vw;
     border-radius: 7px;
     border-color: white;
     border-width: 0;
@@ -54,22 +67,16 @@ button:hover{
     box-shadow: none;
 }
 label{
-    display: block;
-    margin-top: 40px;
     font-weight: bold;
     font-size: x-large;
 }
 #label1{
-    margin-left: 16.5%;
 }
 #label2{
-    margin-left: 59%;
-    margin-top: -95px;
 }
 input{
     block-size: 40px;
-    margin-top: 20px;
-    width:auto;
+    width:20vw;
     padding-left: 10px;
     font-weight: bold;
     font-size: x-large;
@@ -79,16 +86,12 @@ input{
     border-width: 2px;
 }
 #from{
-    margin-left: 16.5%;
-    width: 24%;
 }
 #from::placeholder{
     color: lightgrey;
     font-size: x-large;
 }
 #to{
-    margin-left: 59%;
-    width: 24%;
 }
 #to:hover{
     cursor: none;
@@ -97,8 +100,7 @@ input{
     cursor: text;
 }
 select{
-    block-size: 40px;
-    margin-top: 20px;
+    block-size: 38px;
     padding-left: 10px;
     font-weight: bold;
     font-size: large;
@@ -106,15 +108,11 @@ select{
     color: red;
     border-color: #080808;
     border-width: 1px;
+    width: 14vw;
 }
 #choice1{
-    display: block;
-    margin-left: 16.5%;
 }
 #choice2{
-    display: block;
-    margin-left: 59%;
-    margin-top: -42px;
 }
 option {
     background-color: #fff;
@@ -147,7 +145,7 @@ h2{
 }
 .arrow {
     position: absolute;
-    margin-top: -110px;
+    margin-top: 70px;
     width: 37px;
     height: 30px;
 }
@@ -170,62 +168,52 @@ p{
     cursor: pointer;
 }
 
-@media (min-width: 391px) and (max-width: 1200px){
-    /*almost*/
+@media (min-width: 650px) and (max-width: 1200px){
     .menu{
-        margin-top: 40px;
-        margin-left: 2%;
-        width: 90%;
-        margin-bottom: 80px;
-    }
-    .box{
-        margin: 2%;
-        margin-top: -60px;
-    }
-    button{
-        width: 14%;
-        font-size: 100%;
-        margin-right: 6px;
-    }
-    #label1,#choice1{
-        margin-left: 10%;
-    }
-    #label2,#choice2{
-        margin-left: 61%;
-    }
-    #from{
-        margin-left: 10%;
-        width: 25%;
-    }
-    #to{
-        margin-left: 61%;
-        width: 25%;
-    }
-    #temp{
-        width: 110px;
-    }
-}
-@media(min-width: 391px) and (max-width: 650px){
-    /* set*/
-    h1{
-        padding-bottom: 10px ;
+        position: absolute;
+        top: 115px;
     }
     button{
         width: 13vw;
-        margin-right: 4px;
-        font-size: 90%;
+        font-size: 100%;
+        margin-right: 8px;
     }
-    #volume{
-        display: none;
+    #temp{
+        width: 18%;
+    }
+    @media (max-width: 700px){
+        #temp{
+            width: 110px;
+        }
+    }
+    .box{
+        position: absolute;
+        top: 175px;
+        padding-top: 40px;
+    }
+    .subbox1,.subbox2{
+        height: 190px;
+    }
+    h2{
+        position: relative;
+        margin-top: 90px;
+    }
+
+}
+@media(min-width: 301px) and (max-width: 650px){
+
+    .subBox{
+        flex-direction: column;
     }
     .menu{
         margin: 0;
         width: auto;
         padding-right: 0;
     }
-    .box{
-        margin: 10px;
-        height: auto;
+    button{
+        width: 14vw;
+        margin-right: 4px;
+        font-size: 90%;
     }
     #temp{
         width: 104px;
@@ -233,146 +221,83 @@ p{
     #weight{
         width: 16vw;
     }
-    label{
-        font-size: 140%;
-    }
-    input{
-        width: 50%;
-        font-size: large;
-    }
-    #label1{
-        margin-left: 8%;
-        margin-top: 65px;
-    }
-    #choice1{
-        position: absolute;
-        margin-left: 30%;
-        margin-top: -157px;
-        font-size: medium;
-    }
-    #choice2{
-        position: absolute;
-        margin-left: 30%;
-        margin-top: 30px;
-        font-size: medium;
-    }
-    #label2{
-        margin-left: 10%;
-        margin-top: 160px;
-    }
-    #from{
-        position: absolute;
-        margin-left: 25%;
-        width: 50vw;
-        margin-top: -30px;
-    }
-    #to{
-        position: absolute;
-        margin-top: -30px;
-        width: 50vw;
-        margin-left: 25%;
-    }
-    .arrow{
-        position: absolute;
-        margin-top: -85px;
-        transform: rotate(90deg);
-    }
-    .arrow:hover{
-        transform: rotate(90deg);
-        transform: scale(1.1);
-    }
-    p{
-        position: absolute;
-        margin-top: -70px;
-    }
-    #result{
-        font-size: medium;
-    }
-}
-@media (max-width:391px){
-    h1{
-        padding-bottom: 10px ;
-        font-size: 150%;
-    }
-    button{
-        width: 12.4vw;
-        margin-right: 4px;
-        font-size: 60%;
-        padding: 0;
-        margin-left: -5px;
-    }
     #volume{
         display: none;
     }
+    .arrow {
+        position: absolute;
+        margin-top: 0;
+    }
+    .subbox1,.subbox2{
+    }
     .menu{
-        margin: 0;
-        width: auto;
-        padding-right: 0;
+        position: absolute;
+        top: 111px;
     }
     .box{
-        margin: 10px;
+        position: absolute;
+        top: 165px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
-        width: 77.5vw;
-    }
-    #temp{
-        width: 80px;
-    }
-    label{
-        font-size: 120%;
-    }
-    input{
-        width: 50%;
-        font-size: large;
     }
     #label1{
-        margin-left: 6%;
-        margin-top: 65px;
-    }
-    #choice1{
         position: absolute;
-        margin-left: 30%;
-        margin-top: -157px;
-        font-size: medium;
-    }
-    #choice2{
-        position: absolute;
-        margin-left: 30%;
-        margin-top: 30px;
-        font-size: medium;
+        top: 82px;
+        left: 11vw;
+        font-size: 125%;
     }
     #label2{
-        margin-left: 10%;
-        margin-top: 160px;
+        position: absolute;
+        top: 268px;
+        left: 15vw;
+        font-size: 125%;
     }
     #from{
         position: absolute;
-        margin-left: 25%;
-        width: 45vw;
-        margin-top: -30px;
-    }
-    #from::placeholder{
+        top: 75px;
+        left: 29vw;
+        width: 50vw;
         font-size: large;
     }
     #to{
         position: absolute;
-        margin-top: -30px;
-        width: 45vw;
-        margin-left: 25%;
+        top: 263px;
+        left: 29vw;
+        width: 50vw;
+        font-size: large;
+    }
+    #choice1{
+        position: absolute;
+        top: 135px;
+        left: 32vw;
+        width: auto;
+        font-size: medium;
+    }
+    #choice2{
+        position: absolute;
+        top: 323px;
+        left: 32vw;
+        width: auto;
+        font-size: medium;
     }
     .arrow{
         position: absolute;
-        margin-top: -85px;
+        top: 205px;
         transform: rotate(90deg);
     }
-    p{
-        position: absolute;
-        margin-top: -55px;
-    }
-    #themeicon{
-        width: 26px;
-        height: 25px;
+    h2{
+        position: relative;
+        margin-top: -15px;
+        width: 100%;
     }
     #result{
-        font-size: 45%;
+        font-size: medium;
     }
+
+}
+@media (max-width:391px){
+
 }

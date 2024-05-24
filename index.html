@@ -18,25 +18,32 @@
     <button id="time">Time</button>
 </div>
 <div class="box" id="box">
-    <label for="from" id="label1">From: </label>
-    <input type="text" id="from" placeholder="Enter Unit"/>
-    <label for="to" id="label2">To: </label>
-    <input type="text" id="to" readonly/>
-    <select id="choice1">
-        <option value="m">Meter</option>
-        <option value="cm">CentiMeter</option>
-    </select>
-    <select id="choice2">
-        <option value="m">Meter</option>
-        <option value="cm">CentiMeter</option>
-    </select>
-    <div class="imageContainer">
-        <img src="Images%20and%20Icons/black_arrow.png" class="arrow" id="arrow">
+    <div class="subBox">
+        <div class="subbox1" >
+            <label for="from" id="label1">From: </label>
+            <input type="text" id="from" placeholder="Enter Unit"/>
+            <select id="choice1">
+                <option value="m">Meter</option>
+                <option value="cm">CentiMeter</option>
+            </select>
+        </div>
+        <div class="imageContainer">
+            <img src="Images%20and%20Icons/black_arrow.png" class="arrow" id="arrow">
+        </div>
+        <div class="subbox2">
+            <label for="to" id="label2">To: </label>
+            <input type="text" id="to" readonly/>
+            <select id="choice2">
+                <option value="m">Meter</option>
+                <option value="cm">CentiMeter</option>
+            </select>
+        </div>
     </div>
     <h2>
         <label id="result">RESULT: </label>
     </h2>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

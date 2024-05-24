@@ -56,7 +56,7 @@ from.addEventListener('input',changeValue);
 function changeValue(){
     let text=from.value;
     let num=parseFloat(text).toString();
-    if(isNaN((parseFloat(text)))){
+    if(isNaN((parseFloat(text))) && text!=="-"){
         to.value = "";
         result.style.display="none";
         if(text!==""){
@@ -234,7 +234,8 @@ function weightCalc(text){
     let value2=choice2.value;
     let num=parseFloat(text);
     const weightConversionTable={
-
+        kg: {kg: num, g: num*1000, mg: num*1000000, metricton: num*0.001, longton: num*0.0009842073, shortton: 0.0011023122, pound: 2.2046244202, ounce: 35.273990723, carat: 5000, amu: 6.022136652E+26 },
+        g: {kg: num*0.001, g: num, mg: num*1000, metricton: num*0.000001, longton: num*9.842073304E-7, shortton: 0.0000011023, pound: 0.0022046244, ounce: 0.0352739907, carat: 5, amu: 6.022136652E+23 },
     }
     to.value=weightConversionTable[value1][value2];
 }

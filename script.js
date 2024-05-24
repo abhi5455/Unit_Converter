@@ -103,7 +103,7 @@ function menuClick() {
         if(otherButton===button)
             continue;
         else{
-            otherButton.style.backgroundColor='blue';
+            otherButton.style.backgroundColor='#0541d8';
             otherButton.style.color = 'white';
         }
     }

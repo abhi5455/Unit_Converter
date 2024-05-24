@@ -200,8 +200,7 @@ p{
     }
 
 }
-@media(min-width: 301px) and (max-width: 650px){
-
+@media (max-width: 650px){
     .subBox{
         flex-direction: column;
     }
@@ -301,12 +300,19 @@ p{
         margin-left: 91%;
     }
     #themeicon{
-
         width: 27px;
         height: 25px;
     }
-
-}
-@media (max-width:391px){
-
+    @media (max-width:391px){
+        h1{
+            font-size: 8vw;
+        }
+        button{
+            font-size: 3.5vw;
+        }
+        p{
+            margin-top: -48px;
+            margin-left: 91%;
+        }
+    }
 }

@@ -88,6 +88,9 @@ function changeValue(){
     else if(getComputedStyle(weight).color==='rgb(0, 0, 255)') {
         weightCalc(text);
     }
+    else if(getComputedStyle(time).color==='rgb(0, 0, 255'){
+        timeCalc(text);
+    }
     result.textContent="RESULT: "+from.value+" "+choice1.options[choice1.selectedIndex].text+" = "+to.value+" "+choice2.options[choice2.selectedIndex].text;
 }
 
@@ -255,6 +258,9 @@ function timeCalc(text){
     let value2=choice2.value;
     let num=parseFloat(text);
     const timeConversionTable={
+        s: { s: num, ms: num*1000, micros: num*1000000, nanos: num*1000000000, picos: num*1000000000000, min: num*0.0166666667, hr: num*0.0002777778, day: num*0.0000115741, week: num*0.0000016534, month: num*3.802570537E-7, year: num*3.168808781E-8 },
+        ms: { s: num*0.001, ms: num, micros: num*1000, nanos: num*1000000, picos: num*1000000000, min: num*0.0000166667, hr: num*2.777777777e-7, day: num*1.157407407e-8, week: num*1.653439153e-9, month: num*3.802570537e-10, year: num*3.168808781e-11 },
+        micros: { s: num*0.000001, ms: num*0.001, micros: num, nanos: num*1000, picos: num*1000000, min: num*1.666666666e-8, hr: num*2.77777777e-10, day: num*1.157407407e-11, week: num*1.653439153e-12, month: num*3.802570537E-13, year: num*3.168808781E-14 },
 
     }
     to.value=timeConversionTable[value1][value2];

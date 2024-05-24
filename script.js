@@ -3,11 +3,6 @@ let array = ['m','Meter' , 'km' , 'Kilometer' , 'cm' , 'Centimeter' , 'mm' , 'Mi
 window.onload = function(){
     optionList(array);
 }
-window.addEventListener('resize',function(){
-    if(window.innerWidth <= 600){
-        from.type='number';
-    }
-})
 
 
 //Initializing

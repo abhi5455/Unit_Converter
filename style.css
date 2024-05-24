@@ -9,9 +9,6 @@ h1{
 h1:hover{
     cursor: default;
 }
-*{
-    outline: 2px solid red;
-}
 .menu{
     display: flex;
     position: absolute;

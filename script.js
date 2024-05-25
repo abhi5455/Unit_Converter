@@ -60,8 +60,10 @@ function changeValue(){
         to.value = "";
         result.style.display="none";
         if(text!==""){
-            window.alert("Enter a valid Number");
-            from.value="";
+            result.style.display="block";
+            result.style.color="white";
+            result.style.backgroundColor="red";
+            result.textContent="Enter a valid Number";
         }
         return;
     }
@@ -245,6 +247,7 @@ function weightCalc(text){
         mg: {kg: num*0.000001, g: num*0.001, mg: num, metricton: num*9.999999999E-10, longton: num*9.842073304E-10, shortton: 1.10231221E-9, pound: 0.0000022046, ounce: 0.000035274, carat: 0.005, amu: 602213665200000000000 },
         metricton: {kg: num*1000, g: num*1000000, mg: num*1000000000, metricton: num, longton: num*0.9842073304, shortton: 1.1023122101, pound: 2204.6244202, ounce: 35273.990723, carat: 5000000, amu: 6.022136652E+29 },
         longton: {kg: num*1016.04608, g: num*1016046.08, mg: num*1016046080, metricton: num*1.01604608, longton: num, shortton: 1.12, pound: 2240, ounce: 35840, carat: 5080230.4, amu:  6.118768338E+29},
+
         shortton: { kg: num*907.184, g: num*907184, mg: num*907184000, metricton: num*0.907184, longton: num*0.8928571429, shortton: num, pound: num*2000, ounce: num*32000, carat: num*4535920, amu: num*5.463186016e+29},
         pound: { kg: num*0.453592, g: num*453.592, mg: num*453592, metricton: num*0.000453592, longton: num*0.000446286, shortton: num*0.0005, pound: num, ounce: num*16, carat: num*2267.96, amu: num*2.731593008e+26},
         ounce: { kg: num*0.0283495, g: num*28.3495, mg: num*28349.5, metricton: num*0.0000283495, longton: num*0.0000279018, shortton: num*0.00003125, pound: num*0.0625, ounce: num, carat: num*141.7475, amu: num*1.70724563e+25 },

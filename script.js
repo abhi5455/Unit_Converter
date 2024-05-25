@@ -276,13 +276,23 @@ function timeCalc(text){
     to.value=timeConversionTable[value1][value2];
 }
 
-// need to complete->
+//Calculating result for menuSelected=volume
 function volumeCalc(text){
     let value1=choice1.value;
     let value2=choice2.value;
     let num=parseFloat(text);
     const volumeConversionTable ={
-
+        cubicm: {cubicm: num ,cubickm: num*1e-9 ,cubiccm: num*1000000 ,cubicmm: num*1000000000 ,l: num*1000 ,ml: num*1000000 ,usG: num*264.17217686 ,usQ: num*1056.6887074 ,usP: num*2113.3774149 ,usC: num*4226.7548297 ,usF: num*33814.038638 },
+        cubickm: {cubicm: num*1000000000 ,cubickm: num ,cubiccm: num*1000000000000000 ,cubicmm: num*1000000000000000000 ,l: num*1000000000000 ,ml: num*1000000000000000 ,usG: num*264172176858 ,usQ: num*1056688707432 ,usP: num*2113377414864 ,usC: num*4226754829728 ,usF: num*33814038637823 },
+        cubiccm: {cubicm: num*0.000001 ,cubickm: num*9.999999999e-16 ,cubiccm: num ,cubicmm: num*1000 ,l: num*0.001 ,ml: num ,usG: num*0.0002641722 ,usQ: num*0.0010566887 ,usP: num*0.0021133774 ,usC: num*0.0042267548 ,usF: num*0.0338140386 },
+        cubicmm: {cubicm: num*1e-9 ,cubickm: num*1e-18 ,cubiccm: num*0.001 ,cubicmm: num ,l: num*0.000001 ,ml: num*0.001 ,usG: num*2.641721768e-7 ,usQ: num*0.0000010567 ,usP: num*0.0000021134 ,usC: num*0.0000042268 ,usF: num*0.000033814 },
+        l: {cubicm: num*0.001 ,cubickm: num*1e-12 ,cubiccm: num*1000 ,cubicmm: num*1000000 ,l: num ,ml: num*1000 ,usG: num*0.2641721769 ,usQ: num*1.0566887074 ,usP: num*2.1133774149 ,usC: num*4.2267548297 ,usF: num*33.814038638 },
+        ml: {cubicm: num*0.000001 ,cubickm: num*9.999999999e-16 ,cubiccm: num ,cubicmm: num*1000 ,l: num*0.001 ,ml: num ,usG: num*0.0002641722 ,usQ: num*0.0010566887 ,usP: num*0.0021133774 ,usC: num*0.0042267548 ,usF: num*0.0338140386 },
+        usG: {cubicm: num*0.00378541 ,cubickm: num*3.78541e-12 ,cubiccm: num*3785.41 ,cubicmm: num*3785410 ,l: num*3.78541 ,ml: num*3785.41 ,usG: num ,usQ: num*4 ,usP: num*8 ,usC: num*16 ,usF: num*128 },
+        usQ: {cubicm: num*0.0009463525 ,cubickm: num*9.463525E-13 ,cubiccm: num*946.3525 ,cubicmm: num*946352.5 ,l: num*0.9463525 ,ml: num*946.3525 ,usG: num*0.25 ,usQ: num ,usP: num*2 ,usC: num*4 ,usF: num*32 },
+        usP: {cubicm: num*0.0004731763 ,cubickm: num*4.7317625e-13 ,cubiccm: num*473.17625 ,cubicmm: num*473176.25 ,l: num*0.47317625 ,ml: num*473.17625 ,usG: num*0.125 ,usQ: num*0.5 ,usP: num ,usC: num*2 ,usF: num*16 },
+        usC: {cubicm: num*0.0002365881 ,cubickm: num*2.36588125e-13 ,cubiccm: num*236.588125 ,cubicmm: num*236588.125 ,l: num*0.236588125 ,ml: num*236.588125 ,usG: num*0.0625 ,usQ: num*0.25 ,usP: num*0.5 ,usC: num ,usF: num*8 },
+        usF: {cubicm: num*0.0000295735 ,cubickm: num*2.957351562E-14 ,cubiccm: num*29.573515625 ,cubicmm: num*29573.515625 ,l: num*0.0295735156 ,ml: num*29.573515625 ,usG: num*0.0078125 ,usQ: num*0.03125 ,usP: num*0.0625 ,usC: num*0.125 ,usF: num }
     }
     to.value=volumeConversionTable[value1][value2];
 }

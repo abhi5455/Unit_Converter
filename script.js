@@ -261,6 +261,12 @@ function timeCalc(text){
         s: { s: num, ms: num*1000, micros: num*1000000, nanos: num*1000000000, picos: num*1000000000000, min: num*0.0166666667, hr: num*0.0002777778, day: num*0.0000115741, week: num*0.0000016534, month: num*3.802570537E-7, year: num*3.168808781E-8 },
         ms: { s: num*0.001, ms: num, micros: num*1000, nanos: num*1000000, picos: num*1000000000, min: num*0.0000166667, hr: num*2.777777777e-7, day: num*1.157407407e-8, week: num*1.653439153e-9, month: num*3.802570537e-10, year: num*3.168808781e-11 },
         micros: { s: num*0.000001, ms: num*0.001, micros: num, nanos: num*1000, picos: num*1000000, min: num*1.666666666e-8, hr: num*2.77777777e-10, day: num*1.157407407e-11, week: num*1.653439153e-12, month: num*3.802570537E-13, year: num*3.168808781E-14 },
+        nanos: { s: num*1e-9, ms: num*0.000001, micros: num*0.001, nanos: num, picos: num*1000, min: num*1.666666666e-11, hr: num*2.777777777e-13, day: num*1.157407407e-14, week: num*1.653439153e-15, month: num*3.802570537e-16, year: num*3.168808781e-17 },
+        picos: { s: num*1e-12, ms: num*1e-9, micros: num*0.000001, nanos: num*0.001, picos: num, min: num*1.666666666e-14, hr: num*2.777777777e-16, day: num*1.157407407e-17, week: num*1.653439153e-18, month: num*3.802570537e-19, year: num*3.168808781e-20 },
+        min: { s: num*60, ms: num*60000, micros: num*60000000, nanos: num*60000000000, picos: num*60000000000000, min: num, hr: num*0.0166666667, day: num*0.0006944444, week: num*0.0000992063, month: num*0.0000228154, year: num*0.0000019013 },
+
+        hour: { s: num*3600, ms: num*3600000, micros: num*3600000000, nanos: num*3600000000000, picos: num*3600000000000000, min: num*60, hr: num, day: num*0.0416666667, week: num*0.005952381, month: num*0.0013689254, year: num*0.0001140771 },
+
     }
     to.value=timeConversionTable[value1][value2];
 }

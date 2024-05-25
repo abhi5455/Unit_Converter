@@ -194,6 +194,11 @@ p{
     .subbox1,.subbox2{
         height: 190px;
     }
+    #choice1, #choice2{
+        font-size: 100%;
+        width: auto;
+        max-width: 160px;
+    }
     h2{
         position: relative;
         margin-top: 90px;

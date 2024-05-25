@@ -91,6 +91,9 @@ function changeValue(){
     else if(getComputedStyle(time).color==='rgb(0, 0, 255'){
         timeCalc(text);
     }
+    else if(getComputedStyle(volume).color==='rgb(0, 0, 255)'){
+        volumeCalc(text);
+    }
     result.textContent="RESULT: "+from.value+" "+choice1.options[choice1.selectedIndex].text+" = "+to.value+" "+choice2.options[choice2.selectedIndex].text;
 }
 
@@ -252,7 +255,7 @@ function weightCalc(text){
     to.value=weightConversionTable[value1][value2];
 }
 
-// need to complete->
+//Calculating result for menuSelected=time
 function timeCalc(text){
     let value1=choice1.value;
     let value2=choice2.value;
@@ -264,9 +267,22 @@ function timeCalc(text){
         nanos: { s: num*1e-9, ms: num*0.000001, micros: num*0.001, nanos: num, picos: num*1000, min: num*1.666666666e-11, hr: num*2.777777777e-13, day: num*1.157407407e-14, week: num*1.653439153e-15, month: num*3.802570537e-16, year: num*3.168808781e-17 },
         picos: { s: num*1e-12, ms: num*1e-9, micros: num*0.000001, nanos: num*0.001, picos: num, min: num*1.666666666e-14, hr: num*2.777777777e-16, day: num*1.157407407e-17, week: num*1.653439153e-18, month: num*3.802570537e-19, year: num*3.168808781e-20 },
         min: { s: num*60, ms: num*60000, micros: num*60000000, nanos: num*60000000000, picos: num*60000000000000, min: num, hr: num*0.0166666667, day: num*0.0006944444, week: num*0.0000992063, month: num*0.0000228154, year: num*0.0000019013 },
-
         hour: { s: num*3600, ms: num*3600000, micros: num*3600000000, nanos: num*3600000000000, picos: num*3600000000000000, min: num*60, hr: num, day: num*0.0416666667, week: num*0.005952381, month: num*0.0013689254, year: num*0.0001140771 },
-
+        day: { s: num*86400, ms: num*86400000, micros: num*86400000000, nanos: num*86400000000000, picos: num*86400000000000000, min: num*1440, hr: num*24, day: num, week: num*0.1428571429, month: num*0.0328542094, year: num*0.0027378508 },
+        week: { s: num*604800 ,ms: num*604800000 ,micros: num*604800000000 ,nanos: num*604800000000000 ,picos: num*604800000000000000 ,min: num*10080 ,hr: num*168 ,day: num*7 ,week: num ,month: num*0.2299794661 ,year: num*0.0191649555 },
+        month: { s: num*2629800 ,ms: num*2629800000 ,micros: num*2629800000000 ,nanos: num*2629800000000000 ,picos: num*2629800000000000000 ,min: num*43830 ,hr: num*730.5 ,day: num*30.4375 ,week: num*4.3482142857 ,month: num ,year: num*0.0833333333 },
+        year: { s: num*31557600 ,ms: num*31557600000 ,micros: num*31557600000000 ,nanos: num*31557600000000000 ,picos: num*31557600000000000000 ,min: num*525960 ,hr: num*8766 ,day: num*365.25 ,week: num*52.178571429 ,month: num*12 ,year: num }
     }
     to.value=timeConversionTable[value1][value2];
+}
+
+// need to complete->
+function volumeCalc(text){
+    let value1=choice1.value;
+    let value2=choice2.value;
+    let num=parseFloat(text);
+    const volumeConversionTable ={
+
+    }
+    to.value=volumeConversionTable[value1][value2];
 }

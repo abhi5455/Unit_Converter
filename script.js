@@ -96,7 +96,7 @@ function changeValue(){
     else if(getComputedStyle(volume).color==='rgb(0, 0, 255)'){
         volumeCalc(text);
     }
-    result.textContent="RESULT: "+from.value+" "+choice1.options[choice1.selectedIndex].text+" = "+to.value+" "+choice2.options[choice2.selectedIndex].text;
+    result.innerHTML="RESULT: &nbsp"+from.value+" "+choice1.options[choice1.selectedIndex].text+" = "+to.value+" "+choice2.options[choice2.selectedIndex].text;
 }
 
 

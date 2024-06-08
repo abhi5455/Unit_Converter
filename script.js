@@ -90,7 +90,7 @@ function changeValue(){
     else if(getComputedStyle(weight).color==='rgb(0, 0, 255)') {
         weightCalc(text);
     }
-    else if(getComputedStyle(time).color==='rgb(0, 0, 255'){
+    else if(getComputedStyle(time).color==='rgb(0, 0, 255)'){
         timeCalc(text);
     }
     else if(getComputedStyle(volume).color==='rgb(0, 0, 255)'){

@@ -157,7 +157,7 @@ function optionList(array) {
 //change theme
 let themeicon=document.getElementById('themeicon');
 themeicon.addEventListener('click',changeTheme);
-themeicon.click();
+//themeicon.click();
 function changeTheme(){
     if(themeicon.title==='darktheme'){
         document.body.style.backgroundImage='url("Images%20and%20Icons/dark_bgImg.jpg")';

@@ -155,19 +155,24 @@ h2{
     cursor: pointer;
 }
 p{
-    margin-top: -59px;
+    margin-top: -52px;
     margin-left: 90%;
 }
-#themeicon{
-    width: 32px;
-    height: 30px;
+.themeIcon{
+    width: 24px;
+    height: 24px;
 }
-#themeicon:hover{
+.themeIcon:hover{
     transform: scale(0.9);
     transition: transform 200ms;
     cursor: pointer;
 }
-
+#sun{
+    display: none;
+}
+#moon{
+    display: block;
+}
 @media (min-width: 650px) and (max-width: 1200px){
     .menu{
         position: absolute;
@@ -206,6 +211,9 @@ p{
 
 }
 @media (max-width: 650px){
+    h1{
+        font-size: 30px;
+    }
     .subBox{
         flex-direction: column;
     }
@@ -301,12 +309,12 @@ p{
         font-size: medium;
     }
     p{
-        margin-top: -54px;
+        margin-top: -50px;
         margin-left: 91%;
     }
-    #themeicon{
-        width: 27px;
-        height: 25px;
+    .themeIcon{
+        width: 22px;
+        height: 22px;
     }
     @media (max-width:391px){
         h1{

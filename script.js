@@ -155,29 +155,36 @@ function optionList(array) {
 }
 
 //change theme
-let themeicon=document.getElementById('themeicon');
-themeicon.addEventListener('click',changeTheme);
-//themeicon.click();
+let sun=document.getElementById('sun');
+sun.style.display='none';
+let moon=document.getElementById('moon');
+sun.addEventListener('click',changeTheme);
+moon.addEventListener('click',changeTheme);
+moon.click();
 function changeTheme(){
-    if(themeicon.title==='darktheme'){
+    if(sun.style.display==='none'){
         document.body.style.backgroundImage='url("Images%20and%20Icons/dark_bgImg.jpg")';
-        themeicon.src='Images%20and%20Icons/lighttheme_icon.png';
+        sun.style.display='block';
+        moon.style.display='none';
         document.getElementById('arrow').src = 'Images%20and%20Icons/white_arrow.png';
-        themeicon.title='lighttheme';
         document.getElementById('label1').style.color='white';
         document.getElementById('label2').style.color='white';
         from.style.opacity='10';
         document.getElementById('box').style.backgroundColor='rgba(25, 25, 112, 0.75)';
+        if (window.matchMedia('(max-width: 500px)').matches) {
+            document.getElementById('header').style.color = 'rgba(255,255,255,.8)';
+        }
     }
     else {
         document.body.style.backgroundImage= 'url("Images%20and%20Icons/light_bgImg.jpg")';
-        themeicon.src = 'Images%20and%20Icons/darktheme_icon.png';
+        sun.style.display='none';
+        moon.style.display='block';
         document.getElementById('arrow').src='Images%20and%20Icons/black_arrow.png';
-        themeicon.title = 'darktheme';
         document.getElementById('label1').style.color='black';
         document.getElementById('label2').style.color='black';
         document.getElementById('box').style.backgroundColor='floralwhite';
         document.getElementById('box').style.opacity='.8';
+        document.getElementById('header').style.color='blue';
     }
 }
 

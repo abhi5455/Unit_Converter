@@ -162,7 +162,7 @@ p{
     width: 24px;
     height: 24px;
 }
-.themeIcon:hover{
+.themeIcon:hover, #sun, #moon{
     transform: scale(0.9);
     transition: transform 200ms;
     cursor: pointer;
